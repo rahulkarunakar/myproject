@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>House</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'images/logo.png' %}" alt="" />
+          </a>
+          <div class="navbar-collapse" id="">
+            <ul class="navbar-nav justify-content-between ">
+              <!-- <div class="User_option">
+                <li class="">
+                  <a class="mr-4" href="">
+                    Login
+                  </a>
+                  <a class="" href="">
+                    Sign up
+                  </a>
+                </li>
+              </div> -->
+            </ul>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/index/">HOME</a>
+                <a href="/about/">ABOUT</a>
+                <a href="/house/">HOUSE</a>
+                <a href="/price/">PRICING</a>
+                <a href="/contact/">CONTACT US</a>
+                <a href="/logout/">LOGOUT</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+<!--  <style>-->
+<!--    body {-->
+<!--      font-family: Arial, sans-serif;-->
+<!--      background-color: #f5f5f5;-->
+<!--      text-align: center;-->
+<!--      padding: 20px;-->
+<!--    }-->
+<!--    -->
+<!--    form {-->
+<!--      display: inline-block;-->
+<!--      text-align: left;-->
+<!--      padding: 20px;-->
+<!--      border: 1px solid #ddd;-->
+<!--      border-radius: 5px;-->
+<!--      background-color: #fff;-->
+<!--      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);-->
+<!--    }-->
+<!--    -->
+<!--    label {-->
+<!--      display: block;-->
+<!--      margin-bottom: 10px;-->
+<!--      font-weight: bold;-->
+<!--      color: #333;-->
+<!--    }-->
+<!--    -->
+<!--    input[type="text"],-->
+<!--    textarea {-->
+<!--      width: 300px;-->
+<!--      padding: 10px;-->
+<!--      border: 1px solid #ddd;-->
+<!--      border-radius: 3px;-->
+<!--    }-->
+<!--    -->
+<!--    textarea {-->
+<!--      resize: vertical;-->
+<!--    }-->
+<!--    -->
+<!--    button[type="submit"] {-->
+<!--      padding: 10px 20px;-->
+<!--      background-color: #0066cc;-->
+<!--      color: #ffffff;-->
+<!--      border: none;-->
+<!--      border-radius: 3px;-->
+<!--      cursor: pointer;-->
+<!--    }-->
+<!--    -->
+<!--    button[type="submit"]:hover {-->
+<!--      background-color: #004c99;-->
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="mt-5">-->
+<!--  <form action="/booked/"  method="POST">-->
+<!--     {% csrf_token %}-->
+<!--    <label for="name">Name:</label>-->
+<!--    <input type="text" id="name" name="name" required><br>-->
+<!--    -->
+<!--    <label for="phone">Phone Number:</label>-->
+<!--    <input type="text" id="phone" name="phone" required><br>-->
+<!--    -->
+<!--    <label for="message">Message:</label>-->
+<!--    <textarea id="message" name="message" rows="4" required></textarea><br>-->
+<!--    -->
+<!--    <button type="submit">Submit</button>-->
+<!--  </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</body>-->
+<!--</html>-->
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    select {
+      height: 30px;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Booking Details</h1>
+  <form action="/booked/" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="type">Variant:</label>
+      <select id="type" name="variant">
+        <option value="1">1 BHK</option>
+        <option value="2">2 BHK</option>
+        <option value="3">3 BHK</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="price">Price Range:</label>
+      <select id="price" name="price">
+        <option value="1000-2000">$1000 - $2000</option>
+        <option value="2000-3000">$2000 - $3000</option>
+        <option value="3000+">$3000+</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</body>
+</html>

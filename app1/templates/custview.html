@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>House</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'images/logo.png' %}" alt="" />
+          </a>
+          <div class="navbar-collapse" id="">
+            <ul class="navbar-nav justify-content-between ">
+              <!-- <div class="User_option">
+                <li class="">
+                  <a class="mr-4" href="">
+                    Login
+                  </a>
+                  <a class="" href="">
+                    Sign up
+                  </a>
+                </li>
+              </div> -->
+            </ul>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/index/">HOME</a>
+                <a href="/about/">ABOUT</a>
+                <a href="/house/">HOUSE</a>
+                <a href="/price/">PRICING</a>
+                <a href="/contact/">CONTACT US</a>
+                <a href="/logout/">LOGOUT</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+   <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin-top: 100px ;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .apartment-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .apartment-list li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .apartment-list li:last-child {
+      border-bottom: none;
+    }
+
+    .apartment-list li label {
+      margin-left: 10px;
+    }
+
+    .apartment-list li img {
+      width: 80px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, <span id="username"></span>!</h1>
+    <ul class="apartment-list">
+      <li>
+        <img src="{% static 'images/s-1.jpg' %}" alt="1BHK Apartment">
+        <input type="radio" name="apartment" id="1bhk" value="1000">
+        <label for="1bhk">1BHK Apartment - starts from $1000</label>
+      </li>
+      <li>
+        <img src="{% static 'images/s-2.jpg' %}" alt="2BHK Apartment">
+        <input type="radio" name="apartment" id="2bhk" value="2000">
+        <label for="2bhk">2BHK Apartment - starts from $2000</label>
+      </li>
+      <li>
+        <img src="{% static 'images/s-3.jpg' %}" alt="3BHK Apartment">
+        <input type="radio" name="apartment" id="3bhk" value="3000">
+        <label for="3bhk">3BHK Apartment - starts from $3000</label>
+      </li>
+    </ul>
+    <a href="/details/" class="btn">Buy Now</a>
+  </div>
+</body>
+</body>
+</html>

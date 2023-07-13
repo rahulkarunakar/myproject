@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% load static %}
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" /> 
+
+  <title>Modern</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'images/logo.png' %}" alt="" />
+          </a>
+          <div class="navbar-collapse" id="">
+            <ul class="navbar-nav justify-content-between ">
+              <div class="User_option">
+                <li class="">
+                  <a class="mr-4" href="/login/">Login</a>
+                  <a class="" href="/register/">Sign up</a>
+                </li>
+              </div>
+            </ul>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/index/">HOME</a>
+                <a href="/about/">ABOUT</a>
+                <a href="/house/">HOUSE</a>
+                <a href="/price/">PRICING</a>
+                <a href="/contact/">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 offset-md-1">
+            <div class="detail-box">
+              <h1>
+                <span> Modern</span> <br>
+                Apartment <br>
+                House
+              </h1>
+              <p>
+                Right Around the Corner, Near Everywhere You Want to Be.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- find section -->
+  <!-- <section class="find_section ">
+    <div class="container">
+      <form action="">
+        <div class=" form-row">
+          <div class="col-md-5">
+            <input type="text" class="form-control" placeholder="Serach Your Categories ">
+          </div>
+          <div class="col-md-5">
+            <input type="text" class="form-control" placeholder="Location ">
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="">
+              search
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section> -->
+
+  <!-- end find section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="square-box">
+      <img src="{% static 'images/square.png' %}" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Our Apartment
+              </h2>
+            </div>
+            <p>
+              Welcome to Modern Apartment House! We specialize in providing modern, comfortable and affordable 
+              apartments for our valued residents. OUr properties are conveniently located in desirable neighborhoods 
+              and offer a wide range of amenities and services to meet your needs.<br><br>
+              
+              Our apartments are spacious, with open floor plans that allow for easy entertaining iand relaxation. We pride ourselves on our 
+              attention to detail, and our properties are meticulously maintained to ensure that you have come a comfortable and enjoyable living
+              experience.<br><br>
+
+              Whether you are looking for a studio, one-bedroom, or two-bedroom apartment, we have a variety of options to choose from. Each apartment features high-quality finishes, modern appliances, and ample storage space. Many of our apartments also offer stunning views of the city or surrounding area.
+
+            </p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- sale section -->
+
+  <section class="sale_section layout_padding-bottom">
+    <div class="container-fluid">
+      <div class="heading_container">
+        <h2>
+          House For Sale
+        </h2>
+      </div>
+      <div class="sale_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/s-1.jpg' %}" alt="">
+          </div>
+          <!-- <div class="detail-box">
+            <h6>
+              
+            </h6>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but
+            </p>
+          </div> -->
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/s-2.jpg' %}" alt="">
+          </div>
+          <!-- <div class="detail-box">
+            <h6>
+              apertments house
+            </h6>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but
+            </p>
+          </div> -->
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/s-3.jpg' %}" alt="">
+          </div>
+          <!-- <div class="detail-box">
+            <h6>
+              apertments house
+            </h6>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but
+            </p>
+          </div> -->
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/s-4.jpg' %}" alt="">
+          </div>
+          <!-- <div class="detail-box">
+            <h6>
+              apertments house
+            </h6>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but
+            </p>
+          </div> -->
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/s-5.jpg' %}" alt="">
+          </div>
+          <!-- <div class="detail-box">
+            <h6>
+              apertments house
+            </h6>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but
+            </p>
+          </div> -->
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'images/s-6.jpg' %}" alt="">
+          </div>
+          <!-- <div class="detail-box">
+            <h6>
+              apertments house
+            </h6>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but
+            </p>
+          </div> -->
+        </div>
+      </div>
+      <!-- <div class="btn-box">
+        <a href="">
+          Find More
+        </a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- end sale section -->
+
+  <!-- price section -->
+
+  <section class="price_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Pricing
+        </h2>
+      </div>
+      <div class="price_container">
+        <div class="box">
+          <div class="detail-box">
+            <div class="heading-box">
+              <h4>
+                01
+              </h4>
+              <h6>
+                Basic
+              </h6>
+            </div>
+            <div class="text-box">
+              <h2>
+                starts from $1000.00
+              </h2>
+              <ul>
+                <li>
+                  Our cozy and comfortable 1BHK is perfect for singles, couples, or small families looking for a comfortable and affordable home.<br><br><br>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-box">
+            <a href="/login/">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <div class="heading-box">
+              <h4>
+                02
+              </h4>
+              <h6>
+                Standard
+              </h6>
+            </div>
+            <div class="text-box">
+              <h2>
+                starts from $2000.00
+              </h2>
+              <ul>
+                <li>
+                  We understand the importance of space, comfort, and luxury. That's why we've designed our 3BHK to meet all your needs, whether you're looking for a temporary or long-term residence.<br><br>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-box">
+            <a href="/login/">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="detail-box">
+            <div class="heading-box">
+              <h4>
+                03
+              </h4>
+              <h6>
+                Premium
+              </h6>
+            </div>
+            <div class="text-box">
+              <h2>
+               starts from $3000.00
+              </h2>
+              <ul>
+                <li>
+                  Welcome to our luxurious 4-bedroom, 4-bathroom apartment, where style, comfort, and sophistication come together to create the ultimate living experience. Our 4BHK apartment is perfect for those who value space, elegance, and premium amenities.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-box">
+            <a href="/login/ ">
+              Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end price section -->
+
+  <!-- deal section -->
+
+  <!-- <section class="deal_section layout_padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Very Good Deal For House
+              </h2>
+            </div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in
+              some form, by injected humour, or randomised words which don't look even slightly believable.
+            </p>
+            <a href="">
+              Get A Quote
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <div class="box b1">
+              <img src="images/d-1.jpg" alt="">
+            </div>
+            <div class="box b1">
+              <img src="images/d-2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- end deal section -->
+
+
+  <!-- us section -->
+  <section class="us_section layout_padding2">
+
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why Choose Us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{ % static 'images/u-1.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h3 class="price">
+                1000+
+              </h3>
+              <h5>
+                Years of House
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/u-2.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h3>
+                20000+
+              </h3>
+              <h5>
+                Projects Delivered
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/u-3.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h3>
+                10000+
+              </h3>
+              <h5>
+                Satisfied Customers
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/u-4.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h3>
+                1500+
+              </h3>
+              <h5>
+                Cheap Rates
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="btn-box">
+        <a href="">
+          Get A Quote
+        </a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- end us section -->
+
+  <!-- client secction -->
+
+  <section class="client_section layout_padding">
+    <div class="container-fluid">
+      <div class="heading_container">
+        <h2>
+          Feedbacks From Our Customer
+        </h2>
+      </div>
+      <div class="client_container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/client.jpg' %}" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <span>Majority</span>
+                    <hr>
+                  </h5>
+                  <p>
+                    "The 3BHK apartment was spacious, well-maintained, and luxurious. The kitchen was fully equipped, the bedrooms had ample closet space, and the bathrooms were modern and clean. The living area was perfect for entertaining and relaxing. Overall, a comfortable and upscale living experience that I highly recommend."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="{% static 'images/client.jpg' %}" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <span>Majority</span>
+                    <hr>
+                  </h5>
+                  <p>
+                    "I recently purchased a 2 BHK apartment from modern house apartments and I am extremely pleased with the outcome. There expertise and attention to detail have truly transformed my living space into a comfortable and stylish home."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client.jpg" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <span>Majority</span>
+                    <hr>
+                  </h5>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration
+                    in some form, by injected humour, or randomised words which don't look even slightly believable.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+<!--  <section class="contact_section " id="x">-->
+<!--    <div class="container">-->
+<!--      <div class="heading_container">-->
+<!--        <h2>-->
+<!--          Get In Touch-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="container-fluid">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-6 px-0">-->
+<!--          <div class="map_container">-->
+<!--            <div class="map-responsive">-->
+<!--              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63067.78595550292!2d76.55387347381384!3d8.904060034887852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fc5bdda9c621%3A0x8bf03195267372f7!2sKollam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1684732475492!5m2!1sen!2sin" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-lg-6 col-md-5 ">-->
+<!--          <div class="form_container">-->
+<!--            <form action="">-->
+<!--              <div>-->
+<!--                <input type="text" placeholder="Name" />-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <input type="email" placeholder="Email" />-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <input type="text" placeholder="Phone Number" />-->
+<!--              </div>-->
+<!--              <div>-->
+<!--                <input type="text" class="message-box" placeholder="Message" />-->
+<!--              </div>-->
+<!--              <div class="d-flex ">-->
+<!--                <button>-->
+<!--                  Send-->
+<!--                </button>-->
+<!--              </div>-->
+<!--            </form>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+  <!-- end contact section -->
+
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              About Apartment
+            </h5>
+            <div>
+              <div class="img-box">
+                <img src="{ % static 'images/location.png' %}" width="18px" alt="">
+              </div>
+              <p>
+                Address
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/phone.png' %}" width="12px" alt="">
+              </div>
+              <p>
+                +01 1234567890
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <img src="{% static 'images/mail.png' %}" width="18px" alt="">
+              </div>
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- <div class="info_info">
+            <h5>
+              Information
+            </h5>
+            <p>
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Useful Link
+            </h5>
+            <ul>
+              <li>
+                <a href="">
+                  There are many
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  variations of
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  passages of
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Lorem Ipsum
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  available, but
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  the i
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form> -->
+            <div class="social_box">
+              <a href="">
+                <img src="{% static 'images/fb.png'%}" alt="">
+              </a>&nbsp;
+              <a href="">
+                <img src="{% static 'images/twitter.png' %}" alt="">
+              </a>&nbsp;
+              <a href="">
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+              </a>&nbsp;
+              <a href="">
+                <img src="{% static 'images/youtube.png' %}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By Modern
+        <!-- <a href="https://html.design/">Free Html Templates</a> -->
+        
+      </p>
+    </div>
+  </section>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
+
+</html>
